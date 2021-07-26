@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+const url = `${document.baseURI}/server.json`;
 const api = axios.create({
-    baseURL:'https://vtex-apple-store.netlify.app/server.json'
+    baseURL: url
 })
 
 export default api;
