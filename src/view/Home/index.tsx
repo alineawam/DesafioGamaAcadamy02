@@ -15,11 +15,7 @@ interface IProduct {
 const Home: React.FC = () => {
     const [data, setData] = useState<IProduct[]>([]);
     useEffect(() => {
-        api.get('').then(
-            response => {
-                setData(response.data)
-            }
-        )
+                setData(api.produtos)
     }, [])
 
 
